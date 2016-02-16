@@ -7,7 +7,7 @@ module ChefPlugin
     default_settings :chef_authenticate_nodes => true,
                      :chef_smartproxy_privatekey => '/etc/chef/client.pem',
                      :chef_ssl_verify => true,
-                     :chef_ssl_pem_file => nil
+                     :chef_ssl_pem_file => false
     plugin :chef, ChefPlugin::VERSION
   end
 end
